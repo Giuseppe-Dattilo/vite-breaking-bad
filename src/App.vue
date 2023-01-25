@@ -1,9 +1,10 @@
 <script>
+import SelectForm from './components/SelectForm.vue';
 import axios from 'axios';
 import { store } from './data/store';
 import AppMain from './components/AppMain.vue'
 export default {
-  components: { AppMain },
+  components: { AppMain, SelectForm },
   data() {
     return {
       store
@@ -27,6 +28,7 @@ export default {
   <header>
     <h1 class="text-center my-5 text-white fw-bold">Pokemon</h1>
   </header>
+  <select-form></select-form>
   <app-main></app-main>
 </template>
 
